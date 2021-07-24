@@ -1,0 +1,26 @@
+{
+    "description": "Remove Column 2 from Youtube",
+    "manifest_version": 2,
+    "name": "Focus-YT",
+    "version": "1.00",
+    "author": "hzeghari",
+    "homepage_url": "https://github.com/hzeghari/Focus-YT",
+    "icons": {
+        "144": "icons/favicon4_144.png"
+    },
+
+    "content_scripts":[
+        {
+            "matches":["*://*.youtube.com/*"],
+            "run_at": "document_start",
+            "js": ["focus-yt.js"]
+        }
+    ],
+
+    
+
+    "permissions": [
+        "storage"
+    ]
+}
+
